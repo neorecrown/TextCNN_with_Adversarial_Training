@@ -20,6 +20,6 @@
     python main.py --adversarial_model Free --minibatch_replays 10 #默认为10
 
     # TextRCNN with FGSM
-    python run.py --adversarial_model FGSM #alpha设为2
+    python main.py --adversarial_model FGSM #alpha设为2
     ```
 7. **输出报告**：详细见当前目录<总结报告.docx>
