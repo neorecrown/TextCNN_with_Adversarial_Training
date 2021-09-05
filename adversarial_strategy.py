@@ -97,7 +97,7 @@ class FGSM():
                 param.data.add_(self.r)
 
     # attack
-    def attack(self, epsilon=1., alpha=4, emb_name='embedding'):
+    def attack(self, epsilon=1., alpha=2, emb_name='embedding'):
         # emb_name这个参数要换成你模型中embedding的参数名
         for name, param in self.model.named_parameters():
             if param.requires_grad and emb_name in name:
